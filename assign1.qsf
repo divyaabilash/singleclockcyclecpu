@@ -1,0 +1,102 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+# Date created = 20:15:31  October 27, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		assign1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE auto
+set_global_assignment -name TOP_LEVEL_ENTITY singlecpu
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:15:31  OCTOBER 27, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE MIPSALU.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_sasicheck.vwf
+set_global_assignment -name VERILOG_FILE registerfile.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_reg.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_reg_1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_reg_sur.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE wave_alu.vwf
+set_global_assignment -name VERILOG_FILE Datamemory.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE datamemoryfirst.vwf
+set_global_assignment -name VERILOG_FILE Instructionmemory.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE instructionmemoryaveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE instructionmemoryaveform_1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveformim_w.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_im.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_datamemory.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_datamemory1.vwf
+set_global_assignment -name VERILOG_FILE multiplexer.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE multiplexerwave1.vwf
+set_global_assignment -name VERILOG_FILE ALUControl.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE ALUControlWave1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ALUControlWave2.vwf
+set_global_assignment -name VERILOG_FILE mainControlUnit.v
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveformmaincontrol.vwf
+set_global_assignment -name VERILOG_FILE MIPS_regfile_alu.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE regaluconnection.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveformconnected.vwf
+set_global_assignment -name VERILOG_FILE implimentcopyALU.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveformcopyofaluprogram.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveformaluandreg.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveformcopyofall.vwf
+set_global_assignment -name VERILOG_FILE signextender.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE "Waveform-signextension.vwf"
+set_global_assignment -name VERILOG_FILE PC.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_pc.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_PCaluregmux.vwf
+set_global_assignment -name VERILOG_FILE shiftleftmodule.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_shiftleftmodule.vwf
+set_global_assignment -name VERILOG_FILE adder.v
+set_global_assignment -name VERILOG_FILE decoder.v
+set_global_assignment -name VERILOG_FILE mux.v
+set_global_assignment -name VERILOG_FILE singlecpu.v
+set_global_assignment -name VERILOG_FILE pc_adder.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE singlecpuwaveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform_pc_adder.vwf
+set_global_assignment -name VERILOG_FILE AndOp.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE sc.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE singlecyclecpu.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE singlecyclecpuwaveform.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
